@@ -1,0 +1,17 @@
+{
+  "name": "janavi-parmar-portfolio",
+  "version": "1.0.0",
+  "description": "UI/UX Designer Portfolio - Janavi Parmar with Firebase Integration",
+  "scripts": {
+    "build": "echo 'Static HTML/CSS/JS project - no build required'",
+    "start": "npx serve ."
+  },
+  "keywords": ["portfolio", "ui-ux", "designer", "firebase", "firestore"],
+  "author": "Janavi Parmar",
+  "license": "MIT",
+  "notes": {
+    "firebase": "Using Firebase SDK via CDN (no npm install required)",
+    "setup": "See FIREBASE_SETUP_GUIDE.md for complete setup instructions",
+    "config": "Update JS/firebaseConfig.js with your Firebase credentials"
+  }
+}

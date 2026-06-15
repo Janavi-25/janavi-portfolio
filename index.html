@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janavi Parmar | UI/UX Designer Portfolio</title>
+  <meta name="description" content="UI/UX Designer Portfolio - Janavi Parmar. Creating intuitive and user-friendly digital experiences through research-driven design.">
+  <meta name="keywords" content="UI Designer, UX Designer, Portfolio, Janavi Parmar, Figma, Design, User Experience">
+  <meta name="author" content="Janavi Parmar">
+  <meta property="og:title" content="Janavi Parmar | UI/UX Designer">
+  <meta property="og:description" content="Creating intuitive and user-friendly digital experiences through research-driven design.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3EJP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="loader-logo">
+      <div class="loader-logo-outer"></div>
+      <div class="loader-logo-spinner"></div>
+      <div class="loader-logo-text">JP</div>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-bar-inner"></div>
+    </div>
+    <p class="loader-text">Loading Experience...</p>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress">
+    <div class="scroll-progress-inner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <a href="#home" class="navbar-logo"><span>J</span>anavi<span>.</span></a>
+
+        <div id="navbar-menu" class="navbar-menu">
+          <!-- Navigation items will be rendered by JavaScript -->
+        </div>
+
+        <div class="navbar-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <!-- Icon will be rendered by JavaScript -->
+          </button>
+          <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <div id="mobile-menu-content" class="mobile-menu-content">
+          <!-- Mobile menu items will be rendered by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-bg-shape"></div>
+      <div class="hero-bg-shape"></div>
+      <div class="hero-bg-shape"></div>
+      <div class="hero-particle" style="top: 20%; left: 10%; animation-delay: 0s; animation-duration: 6s;"></div>
+      <div class="hero-particle" style="top: 35%; left: 22%; animation-delay: 0.5s; animation-duration: 5s;"></div>
+      <div class="hero-particle" style="top: 50%; left: 34%; animation-delay: 1s; animation-duration: 7s;"></div>
+      <div class="hero-particle" style="top: 65%; left: 46%; animation-delay: 1.5s; animation-duration: 5.5s;"></div>
+      <div class="hero-particle" style="top: 80%; left: 58%; animation-delay: 2s; animation-duration: 6.5s;"></div>
+      <div class="hero-particle" style="top: 25%; left: 70%; animation-delay: 2.5s; animation-duration: 4.5s;"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg class="hero-badge-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 22l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/></svg>
+        <span class="hero-badge-text">Vadodara, Gujarat, India</span>
+      </div>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="hero-title-name">Janavi</span>
+      </h1>
+
+      <div class="hero-subtitle">
+        <p class="hero-subtitle-text">
+          I'm a <span id="typing-text" class="hero-typing"></span><span class="hero-cursor"></span>
+        </p>
+      </div>
+
+      <p class="hero-intro">
+        I design intuitive and user-friendly digital experiences that solve real-world problems through research, creativity, and user-centered design.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="hero-btn hero-btn-primary">
+          <span class="hero-btn-content">
+            View Projects
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </span>
+        </a>
+        <a href="#contact" class="hero-btn hero-btn-secondary">
+          Contact Me
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="#" id="resume-link" class="hero-btn hero-btn-resume" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          View Resume
+        </a>
+      </div>
+    </div>
+
+    <button href="#about" class="hero-scroll" data-section="about">
+      <span class="hero-scroll-text">Scroll</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5"/><path d="m7 9 5 5 5-5"/></svg>
+    </button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">My Design Journey</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-image-glow"></div>
+          <div class="about-image-wrapper">
+            <img src="https://i.postimg.cc/RVHHwrtg/myjourney.png" alt="Janavi Parmar" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-card">
+            <h3 class="about-card-title">My Journey</h3>
+            <p id="about-journey" class="about-card-text"></p>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-card-title accent">Career Goals</h3>
+            <p id="about-goals" class="about-card-text"></p>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-card-title">Design Philosophy</h3>
+            <p id="about-philosophy" class="about-card-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="about-stats" class="about-stats">
+        <!-- Stats will be rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">What I Do</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-card">
+          <div class="skills-card-icon primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3 class="skills-card-title">Design Skills</h3>
+          <div id="design-skills">
+            <!-- Skills will be rendered by JavaScript -->
+          </div>
+        </div>
+
+        <div class="skills-card">
+          <div class="skills-card-icon accent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.08-8.58 3.91a2 2 0 0 1-1.66 0L3.18 17.08a1 1 0 0 1 0-1.83l8.58-3.9a2 2 0 0 1 1.66 0l8.58 3.9a1 1 0 0 1 0 1.83Z"/><path d="m22 12.08-8.58 3.91a2 2 0 0 1-1.66 0L3.18 12.08a1 1 0 0 1 0-1.83l8.58-3.9a2 2 0 0 1 1.66 0l8.58 3.9a1 1 0 0 1 0 1.83Z"/></svg>
+          </div>
+          <h3 class="skills-card-title">Tools</h3>
+          <div id="tool-skills">
+            <!-- Skills will be rendered by JavaScript -->
+          </div>
+        </div>
+
+        <div class="skills-card">
+          <div class="skills-card-icon green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+          </div>
+          <h3 class="skills-card-title">Development</h3>
+          <div id="dev-skills">
+            <!-- Skills will be rendered by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Experience</p>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="experience-line"></div>
+        <div id="experience-list">
+          <!-- Experience items will be rendered by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+
+      <div class="projects-filters">
+        <div class="projects-search">
+          <svg class="projects-search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="project-search" class="projects-search-input" placeholder="Search projects...">
+        </div>
+
+        <div id="project-categories" class="projects-categories">
+          <!-- Categories will be rendered by JavaScript -->
+        </div>
+      </div>
+
+      <div id="projects-grid" class="projects-grid">
+        <!-- Projects will be rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Modal -->
+  <div id="case-study-modal" class="modal-overlay hidden">
+    <div class="modal-backdrop"></div>
+    <div id="modal-content" class="modal-content">
+      <!-- Modal content will be rendered by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Design Process Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Process</p>
+        <h2 class="section-title">My Design Process</h2>
+      </div>
+
+      <div class="process-line"></div>
+      <div id="process-grid" class="process-grid">
+        <!-- Process steps will be rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Certifications</p>
+        <h2 class="section-title">Professional Growth</h2>
+      </div>
+
+      <div id="certifications-grid" class="certifications-grid">
+        <!-- Certifications will be rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="about-card-text" style="max-width: 40rem; margin: 16px auto 0; text-align: center;">
+          Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div id="contact-info" class="contact-info">
+          <!-- Contact info will be rendered by JavaScript -->
+        </div>
+
+        <div id="form-wrapper" class="contact-form">
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" name="name" class="form-input" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-input" placeholder="your@email.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <input type="text" name="subject" class="form-input" placeholder="What's this about?">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea name="message" class="form-textarea" rows="5" placeholder="Your message..."></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p class="footer-logo"><span>J</span>anavi<span>.</span></p>
+        <p class="footer-tagline">UI/UX Designer crafting meaningful experiences</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/janaviparmar" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://instagram.com/janaviparmar" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M19 9h.01"/></svg>
+        </a>
+        <a href="https://github.com/janaviparmar" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3-1 4-4 4-7.5 0-1.25-.5-2.5-1.5-3.5.5-1.5 0-3 0-3s-1.5.5-2.5 1c-1.5-.5-3-.5-4.5 0-1-.5-2.5-1-2.5-1s-.5 1.5 0 3c-1 1-1.5 2.25-1.5 3.5 0 3.5 1 6.5 4 7.5a4.8 4.8 0 0 0-1 3.5v4"/><path d="M9 22c-2.5 0-4-1-4-1"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p id="footer-copyright" class="footer-copyright"></p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script type="module" src="js/firestoreService.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Portfolio Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3EJP%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+  <div class="admin-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="sidebar-logo">
+          <div class="sidebar-logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 22l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z" />
+            </svg>
+          </div>
+          <span class="sidebar-logo-text">JP Admin</span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <p class="sidebar-nav-title">Main</p>
+        <a href="index.html" class="sidebar-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          View Portfolio
+        </a>
+
+        <p class="sidebar-nav-title">Content</p>
+        <button class="sidebar-nav-item active" data-section="dashboard">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="7" height="9" x="3" y="3" rx="1" />
+            <rect width="7" height="5" x="14" y="3" rx="1" />
+            <rect width="7" height="9" x="14" y="12" rx="1" />
+            <rect width="7" height="5" x="3" y="16" rx="1" />
+          </svg>
+          Dashboard
+        </button>
+        <button class="sidebar-nav-item" data-section="projects"
+          onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3h6l6 18h6" />
+            <path d="M14 3h7" />
+          </svg>
+          Projects
+        </button>
+        <button class="sidebar-nav-item" data-section="experience"
+          onclick="document.getElementById('experience-section').scrollIntoView({behavior: 'smooth'})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+          </svg>
+          Experience
+        </button>
+        <button class="sidebar-nav-item" data-section="skills"
+          onclick="document.getElementById('skills-section').scrollIntoView({behavior: 'smooth'})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+          </svg>
+          Skills
+        </button>
+        <button class="sidebar-nav-item" data-section="certifications"
+          onclick="document.getElementById('certifications-section').scrollIntoView({behavior: 'smooth'})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="6" />
+            <path d="M15.477 12.39 12 22l-3.477-9.61a8 8 0 0 1 6.954 0Z" />
+          </svg>
+          Certifications
+        </button>
+
+        <p class="sidebar-nav-title">Settings</p>
+        <button class="sidebar-nav-item"
+          onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          Contact Info
+        </button>
+        <button class="sidebar-nav-item"
+          onclick="document.getElementById('about-section').scrollIntoView({behavior: 'smooth'})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+          </svg>
+          About Content
+        </button>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <h1 class="top-bar-title">Dashboard</h1>
+        <div class="top-bar-actions">
+          <a href="index.html" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+            View Site
+          </a>
+        </div>
+      </header>
+
+      <div class="admin-content">
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value" id="stat-projects">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-experience">0</div>
+            <div class="stat-label">Experiences</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-certifications">0</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-skills">0</div>
+            <div class="stat-label">Skills</div>
+          </div>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects-section">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2 class="admin-card-title">Projects</h2>
+              <button class="btn btn-primary" onclick="openAddProjectModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" />
+                </svg>
+                Add Project
+              </button>
+            </div>
+            <div class="admin-card-body">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>Category</th>
+                    <th>Tools</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="projects-table-body">
+                  <!-- Projects loaded via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience-section">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2 class="admin-card-title">Experience</h2>
+              <button class="btn btn-primary" onclick="openAddExperienceModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" />
+                </svg>
+                Add Experience
+              </button>
+            </div>
+            <div class="admin-card-body" id="experiences-list">
+              <!-- Experiences loaded via JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills-section">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2 class="admin-card-title">Skills</h2>
+              <button class="btn btn-primary" onclick="openAddSkillModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" />
+                </svg>
+                Add Skill
+              </button>
+            </div>
+            <div class="admin-card-body">
+              <div class="tabs">
+                <button class="tab active" data-tab="design-skills-panel">Design Skills</button>
+                <button class="tab" data-tab="tools-skills-panel">Tools</button>
+                <button class="tab" data-tab="dev-skills-panel">Development</button>
+              </div>
+
+              <div id="design-skills-panel" class="tab-content active">
+                <div id="design-skills-list"></div>
+              </div>
+
+              <div id="tools-skills-panel" class="tab-content">
+                <div id="tools-skills-list"></div>
+              </div>
+
+              <div id="dev-skills-panel" class="tab-content">
+                <div id="dev-skills-list"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications-section">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2 class="admin-card-title">Certifications</h2>
+              <button class="btn btn-primary" onclick="openAddCertificationModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" />
+                </svg>
+                Add Certification
+              </button>
+            </div>
+            <div class="admin-card-body" id="certifications-list">
+              <!-- Certifications loaded via JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Messages Section -->
+        <section id="messages-section">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2 class="admin-card-title">Contact Messages</h2>
+            </div>
+
+            <div class="admin-card-body">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Message</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+
+                <tbody id="messages-table-body">
+                  <!-- Messages loaded via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2 class="admin-card-title">Contact & Personal Information</h2>
+            </div>
+            <div class="admin-card-body">
+              <form id="contact-form" onsubmit="saveContactInfo(event)">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" id="contact-email" class="form-input" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Phone</label>
+                    <input type="tel" id="contact-phone" class="form-input" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">Location</label>
+                    <input type="text" id="contact-location" class="form-input" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Availability Status</label>
+                    <input type="text" id="contact-availability" class="form-input" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">Your Name</label>
+                    <input type="text" id="contact-name" class="form-input" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Your Role</label>
+                    <input type="text" id="contact-role" class="form-input" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Resume URL (Google Drive, PDF link, etc.)</label>
+                  <input type="url" id="contact-resume" class="form-input" placeholder="https://...">
+                  <p style="font-size: 12px; color: var(--dark-500); margin-top: 4px;">Leave empty to hide the Resume
+                    button on the portfolio</p>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Contact Info</button>
+                <button class="sidebar-nav-item"
+                  onclick="document.getElementById('messages-section').scrollIntoView({behavior: 'smooth'})">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+
+                  </svg>
+
+                  Contact Messages
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2 class="admin-card-title">About Content</h2>
+            </div>
+            <div class="admin-card-body">
+              <form id="about-form" onsubmit="saveAboutContent(event)">
+                <div class="form-group">
+                  <label class="form-label">My Journey</label>
+                  <textarea id="about-journey" class="form-textarea" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Career Goals</label>
+                  <textarea id="about-goals" class="form-textarea" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Design Philosophy</label>
+                  <textarea id="about-philosophy" class="form-textarea" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Save About Content</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- Reset Data -->
+        <section>
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2 class="admin-card-title">Danger Zone</h2>
+            </div>
+            <div class="admin-card-body">
+              <p style="margin-bottom: 16px; color: var(--dark-500);">Reset all portfolio data to default values. This
+                action cannot be undone.</p>
+              <button class="btn btn-danger" onclick="resetAllData()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                  <path d="M21 3v5h-5" />
+                  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                  <path d="M8 16H3v5" />
+                </svg>
+                Reset All Data
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="project-modal-title">Add New Project</h3>
+        <button class="modal-close" onclick="closeModal('project-modal')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </div>
+      <form id="project-form" onsubmit="saveProject(event)">
+        <div class="modal-body">
+          <input type="hidden" id="project-id">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Project Title</label>
+              <input type="text" id="project-title" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select id="project-category" class="form-select" required>
+                <option value="Mobile App">Mobile App</option>
+                <option value="Web App">Web App</option>
+                <option value="Dashboard">Dashboard</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Description</label>
+            <textarea id="project-description" class="form-textarea" rows="3" required></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Thumbnail URL</label>
+              <input type="url" id="project-thumbnail" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Live Link</label>
+              <input type="url" id="project-link" class="form-input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Tools</label>
+            <div id="project-tools-list" class="dynamic-list"></div>
+            <button type="button" class="btn btn-secondary btn-sm dynamic-list-add" onclick="addToolItem()">+ Add
+              Tool</button>
+          </div>
+
+          <h4 style="margin-top: 24px; margin-bottom: 16px; font-weight: 600;">Case Study (Optional)</h4>
+
+          <div class="form-group">
+            <label class="form-label">Problem Statement</label>
+            <textarea id="project-problem" class="form-textarea" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">User Research</label>
+            <textarea id="project-research" class="form-textarea" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Pain Points</label>
+            <div id="project-painpoints-list" class="dynamic-list"></div>
+            <button type="button" class="btn btn-secondary btn-sm dynamic-list-add" onclick="addPainPointItem()">+ Add
+              Pain Point</button>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Solution</label>
+            <textarea id="project-solution" class="form-textarea" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Wireframes</label>
+            <textarea id="project-wireframes" class="form-textarea" rows="2"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Final UI</label>
+            <textarea id="project-finalui" class="form-textarea" rows="2"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Key Learnings</label>
+            <textarea id="project-learnings" class="form-textarea" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('project-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Experience Modal -->
+  <div id="experience-modal" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="experience-modal-title">Add Experience</h3>
+        <button class="modal-close" onclick="closeModal('experience-modal')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </div>
+      <form id="experience-form" onsubmit="saveExperience(event)">
+        <div class="modal-body">
+          <input type="hidden" id="experience-id">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Company</label>
+              <input type="text" id="exp-company" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Role</label>
+              <input type="text" id="exp-role" class="form-input" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Duration</label>
+              <input type="text" id="exp-duration" class="form-input" placeholder="e.g., 4 Months" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Period</label>
+              <input type="text" id="exp-period" class="form-input" placeholder="e.g., Jan 2024 - Apr 2024" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Location</label>
+              <input type="text" id="exp-location" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Type</label>
+              <select id="exp-type" class="form-select" required>
+                <option value="Internship">Internship</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Freelance">Freelance</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Responsibilities</label>
+            <div id="responsibilities-list" class="dynamic-list"></div>
+            <button type="button" class="btn btn-secondary btn-sm dynamic-list-add" onclick="addResponsibilityItem()">+
+              Add Responsibility</button>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Achievements</label>
+            <div id="achievements-list" class="dynamic-list"></div>
+            <button type="button" class="btn btn-secondary btn-sm dynamic-list-add" onclick="addAchievementItem()">+ Add
+              Achievement</button>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Tools Used</label>
+            <div id="exp-tools-list" class="dynamic-list"></div>
+            <button type="button" class="btn btn-secondary btn-sm dynamic-list-add" onclick="addExpToolItem()">+ Add
+              Tool</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('experience-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Experience</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Skill Modal -->
+  <div id="skill-modal" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="skill-modal-title">Add Skill</h3>
+        <button class="modal-close" onclick="closeModal('skill-modal')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </div>
+      <form id="skill-form" onsubmit="saveSkill(event)">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Category</label>
+            <select id="skill-category" class="form-select" required>
+              <option value="design">Design Skills</option>
+              <option value="tools">Tools</option>
+              <option value="development">Development</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Skill Name</label>
+            <input type="text" id="skill-name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Proficiency Level: <span id="skill-level-display">50</span>%</label>
+            <input type="range" id="skill-level" class="form-input" min="0" max="100" value="50"
+              oninput="document.getElementById('skill-level-display').textContent = this.value">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('skill-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Add Skill</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Certification Modal -->
+  <div id="certification-modal" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="certification-modal-title">Add Certification</h3>
+        <button class="modal-close" onclick="closeModal('certification-modal')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </div>
+      <form id="certification-form" onsubmit="saveCertification(event)">
+        <div class="modal-body">
+          <input type="hidden" id="certification-id">
+
+          <div class="form-group">
+            <label class="form-label">Certification Title</label>
+            <input type="text" id="cert-title" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Issuing Organization</label>
+            <input type="text" id="cert-issuer" class="form-input" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Date</label>
+              <input type="text" id="cert-date" class="form-input" placeholder="e.g., December 2023" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Credential Link</label>
+              <input type="url" id="cert-link" class="form-input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Image URL</label>
+            <input type="url" id="cert-image" class="form-input" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('certification-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Certification</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="JS/firestoreService.js"></script>
+  <script type="module" src="JS/admin.js"></script>
+</body>
+
+</html>
