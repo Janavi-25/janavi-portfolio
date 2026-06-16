@@ -58,7 +58,7 @@ if (isConfigValid) {
     console.error("Firebase initialization error:", error);
   }
 }
-export { FirestoreService, auth };
+
 
 // ========================================
 // FIRESTORE SERVICE
@@ -436,5 +436,5 @@ async getContactMessages() {
   }
 };
 
-export { FirestoreService };
+export { FirestoreService, auth };
 
