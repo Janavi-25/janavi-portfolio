@@ -39,20 +39,22 @@ const isConfigValid = firebaseConfig.apiKey && firebaseConfig.apiKey !== '' && !
 // Initialize Firebase
 let app = null;
 let db = null;
+let auth = null;
 let isFirebaseReady = false;
 
 if (isConfigValid) {
   try {
     app = initializeApp(firebaseConfig);
     db = getFirestore(app);
+    auth = getAuth(app);
+
     isFirebaseReady = true;
     console.log("Firebase initialized successfully");
   } catch (error) {
     console.error("Firebase initialization error:", error);
   }
-} else {
-  console.warn("Firebase not configured. Using placeholder data. Please add your Firebase config.");
 }
+
 export { auth };
 // ========================================
 // FIRESTORE SERVICE
