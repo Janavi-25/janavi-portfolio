@@ -1,10 +1,7 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./firebase.js";
 
-const loginForm = document.getElementById("loginForm");
-
-loginForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
+document.getElementById("loginBtn").addEventListener("click", async () => {
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
@@ -12,11 +9,10 @@ loginForm.addEventListener("submit", async (e) => {
     try {
         await signInWithEmailAndPassword(auth, email, password);
 
-        // Login successful
         window.location.href = "admin.html";
 
     } catch (error) {
-        alert("Invalid Email or Password");
         console.error(error);
+        alert(error.message);
     }
 });
