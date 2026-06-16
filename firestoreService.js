@@ -18,26 +18,7 @@ import {
 
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-let app = null;
-let db = null;
-let auth = null;
 
-if (isConfigValid) {
-  try {
-    app = initializeApp(firebaseConfig);
-    db = getFirestore(app);
-
-    // Auth initialize here
-    auth = getAuth(app);
-
-    isFirebaseReady = true;
-    console.log("Firebase initialized successfully");
-  } catch (error) {
-    console.error("Firebase initialization error:", error);
-  }
-}
-
-export { auth };
 
 // Firebase Configuration
 // TODO: Replace these with your actual Firebase config from Firebase Console
@@ -72,7 +53,7 @@ if (isConfigValid) {
 } else {
   console.warn("Firebase not configured. Using placeholder data. Please add your Firebase config.");
 }
-
+export { auth };
 // ========================================
 // FIRESTORE SERVICE
 // ========================================
