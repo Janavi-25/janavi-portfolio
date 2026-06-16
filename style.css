@@ -160,6 +160,11 @@ body {
    ======================================== */
 /* Full Page */
 body {
+  background: var(--dark-950);
+  color: white;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
