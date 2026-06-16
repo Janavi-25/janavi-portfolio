@@ -1,5 +1,5 @@
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { auth } from "./firebase.js";
+import { auth } from "./firestoreService.js";
 
 document.getElementById("loginBtn").addEventListener("click", async () => {
 
