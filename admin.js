@@ -25,15 +25,18 @@ onAuthStateChanged(auth, (user) => {
   loadData();
 });
 
+import {
+  signOut
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+window.logout = async function () {
+  await signOut(auth);
+  window.location.href = "login.html";
+};
+
 // Make FirestoreService available globally
 window.FirestoreService = FirestoreService;
 
-document.addEventListener('DOMContentLoaded', () => {
-  initAdmin();
-  initTabs();
-  initModals();
-  loadData();
-});
 
 // ========================================
 // INITIALIZATION
