@@ -2,7 +2,9 @@
 // Firebase Configuration & Firestore Service
 // ========================================
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
 import {
   getFirestore,
   collection,
@@ -14,11 +16,11 @@ import {
   deleteDoc,
   onSnapshot,
   setDoc
-} from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-
-
+import {
+  getAuth
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 // Firebase Configuration
 // TODO: Replace these with your actual Firebase config from Firebase Console
@@ -45,17 +47,19 @@ let isFirebaseReady = false;
 if (isConfigValid) {
   try {
     app = initializeApp(firebaseConfig);
+
     db = getFirestore(app);
     auth = getAuth(app);
 
     isFirebaseReady = true;
+
     console.log("Firebase initialized successfully");
   } catch (error) {
     console.error("Firebase initialization error:", error);
   }
 }
+export { FirestoreService, auth };
 
-export { auth };
 // ========================================
 // FIRESTORE SERVICE
 // ========================================
