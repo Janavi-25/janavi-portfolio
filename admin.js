@@ -17,8 +17,12 @@ onAuthStateChanged(auth, (user) => {
     return;
   }
 
-  // Only logged-in user can see admin page
   document.body.style.display = "block";
+
+  initAdmin();
+  initTabs();
+  initModals();
+  loadData();
 });
 
 // Make FirestoreService available globally
