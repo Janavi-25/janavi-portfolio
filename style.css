@@ -164,6 +164,12 @@ body {
   color: white;
 }
 
+body.light-mode {
+  background: white;
+  color: var(--dark-900);
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -253,10 +259,6 @@ body {
         font-size: 14px;
         padding: 12px;
     }
-}
-body.light-mode {
-  background: white;
-  color: var(--dark-900);
 }
 
 /* ========================================
