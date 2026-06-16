@@ -5,14 +5,20 @@
 
 import { FirestoreService } from './firestoreService.js';
 
-import { auth } from './firestoreService.js';
-import { onAuthStateChanged }
-from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { auth } from "./firestoreService.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+// Hide page until auth checked
+document.body.style.display = "none";
 
 onAuthStateChanged(auth, (user) => {
   if (!user) {
-    window.location.href = "login.html";
+    window.location.replace("login.html");
+    return;
   }
+
+  // Only logged-in user can see admin page
+  document.body.style.display = "block";
 });
 
 // Make FirestoreService available globally
