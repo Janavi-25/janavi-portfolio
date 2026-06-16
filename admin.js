@@ -3,8 +3,7 @@
 // CRUD Operations for Portfolio Content - Firestore Version
 // ========================================
 
-import { FirestoreService } from './firestoreService.js';
-
+import { FirestoreService } from "./firestoreService.js";
 import { auth } from "./firestoreService.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
