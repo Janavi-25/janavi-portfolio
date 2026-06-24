@@ -129,13 +129,7 @@ body {
 ::selection {
   background: rgba(14, 165, 233, 0.3);
 }
-/* Force Light Mode */
-body.light-mode .process-card *,
-body.light-mode .process-card h3,
-body.light-mode .process-card p,
-body.light-mode .process-card span {
-    color: black !important;
-}
+
 /* ========================================
    UTILITY CLASSES
    ======================================== */
@@ -1980,13 +1974,6 @@ body.light-mode .process-step {
   color: var(--primary-400);
 }
 
-body.light-mode .process-icon {
-  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(217, 70, 239, 0.1));
-  color: var(--primary-600);
-}
-
-
-
 .process-icon svg {
   width: 24px;
   height: 24px;
@@ -2005,21 +1992,25 @@ body.light-mode .process-card {
     border: 1px solid #e5e7eb !important;
 }
 
-body.light-mode .process-card .process-number {
+/* Light Mode - Process Number */
+body.light-mode .process-number {
     color: #000000 !important;
-    opacity: 0.2 !important;
+    opacity: 1 !important;
 }
 
-body.light-mode .process-card h3,
-body.light-mode .process-card .process-title {
-    color: #000000 !important;
+/* Light Mode - Process Icon Circle */
+body.light-mode .process-icon {
+    background: #2563eb !important; /* Blue */
+    color: #ffffff !important;      /* White icon */
 }
 
-body.light-mode .process-card p,
-body.light-mode .process-card .process-description {
-    color: #111827 !important;
+body.light-mode .process-title {
+   color: #000000 !important;
 }
 
+body.light-mode .process-description {
+   color: #000000 !important;
+}
 
 .process-description {
   font-size: 14px;
