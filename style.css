@@ -1995,7 +1995,6 @@ body.light-mode .process-card {
 /* Light Mode - Process Number */
 body.light-mode .process-number {
     color: #000000 !important;
-    opacity: 1 !important;
 }
 
 /* Light Mode - Process Icon Circle */
