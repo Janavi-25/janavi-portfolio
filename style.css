@@ -1995,9 +1995,9 @@ body.light-mode .process-card {
 /* Light Mode - Process Number 
 body.light-mode .process-number {
     color: #000000 !important;
-}*/
+}
 
-/* Light Mode - Process Icon Circle */
+Light Mode - Process Icon Circle 
 body.light-mode .process-icon {
     background: #2563eb !important; /* Blue */
     color: #ffffff !important;      /* White icon */
@@ -2009,7 +2009,7 @@ body.light-mode .process-title {
 
 body.light-mode .process-description {
    color: #000000 !important;
-}
+}*/
 
 .process-description {
   font-size: 14px;
