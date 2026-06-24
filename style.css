@@ -1983,7 +1983,7 @@ body.light-mode .process-card {
     border: 1px solid #e5e7eb;
 }
 body.light-mode .process-number {
-    color: rgba(37, 99, 235, 0.15);
+    color: #0000;
 }
 
 .process-icon svg {
