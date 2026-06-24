@@ -1978,14 +1978,8 @@ body.light-mode .process-icon {
   background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(217, 70, 239, 0.1));
   color: var(--primary-600);
 }
-body.light-mode .process-card {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-}
-body.light-mode .process-number {
-     color: #000000 !important;
-    opacity: 0.15; /* optional: background watermark effect */
-}
+
+
 
 .process-icon svg {
   width: 24px;
@@ -1999,19 +1993,33 @@ body.light-mode .process-number {
   color: white;
 }
 
-body.light-mode .process-title {
+/* Light Mode Process Cards */
+body.light-mode .process-card {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+}
+
+body.light-mode .process-card .process-number {
+    color: #000000 !important;
+    opacity: 0.2 !important;
+}
+
+body.light-mode .process-card h3,
+body.light-mode .process-card .process-title {
     color: #000000 !important;
 }
+
+body.light-mode .process-card p,
+body.light-mode .process-card .process-description {
+    color: #111827 !important;
 }
+
 
 .process-description {
   font-size: 14px;
   color: var(--dark-400);
 }
 
-body.light-mode .process-description {
-   color: #111827;
-}
 
 /* ========================================
    CERTIFICATIONS SECTION
