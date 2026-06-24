@@ -1949,6 +1949,7 @@ body.light-mode .process-step {
     position:absolute;
     top: 15px;
     right: 22px;
+    left: 20px;
     width:32px;
     height:32px;
     border-radius:50%;
