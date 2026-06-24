@@ -1992,6 +1992,10 @@ body.light-mode .process-card {
     border: 1px solid #e5e7eb !important;
 }
 
+body.light-mode .process-title {
+   color: #000000 !important;
+}
+
 /* Light Mode - Process Number 
 body.light-mode .process-number {
     color: #000000 !important;
@@ -2003,9 +2007,7 @@ body.light-mode .process-icon {
     color: #ffffff !important;      /* White icon */
 }
 
-body.light-mode .process-title {
-   color: #000000 !important;
-}
+
 
 body.light-mode .process-description {
    color: #000000 !important;
