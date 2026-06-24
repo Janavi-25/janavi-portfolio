@@ -1947,9 +1947,8 @@ body.light-mode .process-step {
 
 .process-number{
     position:absolute;
-    top: 20px;
-    right: 20px;
-    left:-12px;
+    top: 15px;
+    right: 22px;
     width:32px;
     height:32px;
     border-radius:50%;
@@ -2004,14 +2003,14 @@ body.light-mode .process-card:hover {
 body.light-mode .process-number {
     color: #000000 !important;
     opacity: 0.15 !important;
-    font-weight: 800;
+    
 }
 
 /* Process Icon Circle */
 body.light-mode .process-icon {
     background: #2563eb !important;
     color: #ffffff !important;
-    border: none !important;
+   
 }
 
 /* Process Title */
