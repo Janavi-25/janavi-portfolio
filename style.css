@@ -1947,7 +1947,8 @@ body.light-mode .process-step {
 
 .process-number{
     position:absolute;
-    top:-20px;
+    top: 20px;
+    right: 20px;
     left:-12px;
     width:32px;
     height:32px;
@@ -1977,6 +1978,13 @@ body.light-mode .process-icon {
   background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(217, 70, 239, 0.1));
   color: var(--primary-600);
 }
+body.light-mode .process-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+body.light-mode .process-number {
+    color: rgba(37, 99, 235, 0.15);
+}
 
 .process-icon svg {
   width: 24px;
@@ -1991,7 +1999,7 @@ body.light-mode .process-icon {
 }
 
 body.light-mode .process-title {
-  color: var(--dark-900);
+    color: #2563eb;
 }
 
 .process-description {
@@ -2000,7 +2008,7 @@ body.light-mode .process-title {
 }
 
 body.light-mode .process-description {
-  color: var(--dark-600);
+   color: #111827;
 }
 
 /* ========================================
