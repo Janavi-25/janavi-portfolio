@@ -914,10 +914,12 @@ body.light-mode .section-title {
   color: var(--dark-900);
 }
 
-.container {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
+.container{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    padding-left:24px;
+    padding-right:24px;
 }
 
 /* ========================================
@@ -2132,6 +2134,9 @@ body.light-mode .certification-date {
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;
+  width:100%;
+  max-width:100%;
+  min-width:0;
 }
 
 @media (min-width: 1024px) {
@@ -2147,15 +2152,21 @@ img{
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width:100%;
+  max-width:100%;
+  min-width:0;
 }
 
 .contact-card {
-  padding: 24px;
+  padding: 16px;
   border-radius: 16px;
   background: rgba(30, 41, 59, 0.5);
   backdrop-filter: blur(16px);
 -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--dark-700);
+   width:100%;
+    max-width:100%;
+    min-width:0;
 }
 
 body.light-mode .contact-card {
@@ -2243,6 +2254,13 @@ body.light-mode .contact-label {
   color: white;
   text-decoration: none;
   transition: color 200ms ease;
+  word-break:break-word;
+  overflow-wrap:break-word;
+}
+
+.contact-value,
+a{
+    overflow-wrap:anywhere;
 }
 
 body.light-mode .contact-value {
@@ -2297,6 +2315,8 @@ body.light-mode .contact-social-title {
 .contact-social-links {
   display: flex;
   gap: 12px;
+  flex-wrap:wrap;
+  word-break:break-word;
 }
 
 .contact-social-link {
@@ -2340,11 +2360,14 @@ body.light-mode .contact-social-link.github:hover {
 
 /* Contact Form */
 .contact-form {
-  padding: 32px;
+  padding: 20px;
   border-radius: 16px;
   background: rgba(30, 41, 59, 0.5);
   backdrop-filter: blur(4px);
   border: 1px solid var(--dark-700);
+  width:100%;
+  max-width:100%;
+  min-width:0;
 }
 
 body.light-mode .contact-form {
