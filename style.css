@@ -1983,7 +1983,8 @@ body.light-mode .process-card {
     border: 1px solid #e5e7eb;
 }
 body.light-mode .process-number {
-    color: #0000;
+     color: #000000 !important;
+    opacity: 0.15; /* optional: background watermark effect */
 }
 
 .process-icon svg {
@@ -1999,7 +2000,8 @@ body.light-mode .process-number {
 }
 
 body.light-mode .process-title {
-    color: #2563eb;
+    color: #000000 !important;
+}
 }
 
 .process-description {
