@@ -2000,12 +2000,22 @@ body.light-mode .process-card:hover {
 }
 
 /* Process Number (01,02,03,04) */
+/* Process Step Number Circle */
 body.light-mode .process-number {
-    color: #000000 !important;
-    opacity: 0.15 !important;
-    
-}
+    background: #2563eb !important;
+    color: #ffffff !important;
 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    opacity: 1 !important;
+}
 /* Process Icon Circle */
 body.light-mode .process-icon {
     background: #2563eb !important;
