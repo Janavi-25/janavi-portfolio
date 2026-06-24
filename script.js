@@ -963,8 +963,14 @@ if (processGrid) {
   processGrid.innerHTML = designProcess.map(step => `
     <div class="process-card">
       <div class="process-number">${step.number}</div>
-      <h3>${step.title}</h3>
-      <p>${step.description}</p>
+
+      <h3 class="process-title">
+        ${step.title}
+      </h3>
+
+      <p class="process-description">
+        ${step.description}
+      </p>
     </div>
   `).join("");
 }
