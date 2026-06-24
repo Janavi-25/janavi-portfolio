@@ -2139,8 +2139,9 @@ body.light-mode .certification-date {
     grid-template-columns: 1fr 1fr;
   }
 }
-*{
+img{
     max-width:100%;
+    height:auto;
 }
 .contact-info {
   display: flex;
@@ -2683,8 +2684,7 @@ body.light-mode .footer-copyright {
   }
 
 .hero-buttons{
-    flex-direction:column;
-    width:100%;
+    align-items:center;
 }
 
   .hero-btn {
@@ -2753,7 +2753,7 @@ textarea:focus-visible {
     box-shadow:0 10px 30px rgba(124,58,237,.15);
 }
 
-.process-number{
+.process-card-number{
     font-size:20px;
     font-weight:800;
     color:var(--accent);
