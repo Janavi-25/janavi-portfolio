@@ -1988,71 +1988,43 @@ body.light-mode .process-step {
    LIGHT MODE - DESIGN PROCESS SECTION
 ======================================== */
 
+/* Process Card */
 body.light-mode .process-card {
     background: #ffffff !important;
-    border: 1px solid #e5e7eb !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
 }
 
-body.light-mode .process-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-/* Process Number (01,02,03,04) */
-/* Process Step Number Circle */
+/* Number Circle */
 body.light-mode .process-number {
-    background: #2563eb !important;
-    color: #ffffff !important;
-
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+
+    background: #2563eb !important; /* Blue */
+    color: #ffffff !important;      /* White */
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    font-size: 20px;
     font-weight: 700;
+
     opacity: 1 !important;
 }
-/* Process Icon Circle */
-body.light-mode .process-icon {
-    background: #2563eb !important;
-    color: #ffffff !important;
-   
-}
 
-/* Process Title */
-body.light-mode .process-title,
-body.light-mode .process-card h3 {
+/* Title */
+body.light-mode .process-title {
     color: #000000 !important;
 }
 
-/* Process Description */
-body.light-mode .process-description,
-body.light-mode .process-card p {
-    color: #111827 !important;
+/* Description */
+body.light-mode .process-description {
+    color: #374151 !important;
 }
 
-/* Section Title */
-body.light-mode .section-title {
-    color: #000000 !important;
-}
 
-/* Process Label */
-body.light-mode .section-label {
-    color: #2563eb !important;
-}
 
-/* Process Line */
-body.light-mode .process-line {
-    background: linear-gradient(
-        90deg,
-        #2563eb,
-        #7c3aed
-    ) !important;
-}
 .process-description {
   font-size: 14px;
   color: var(--dark-400);
