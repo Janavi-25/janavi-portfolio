@@ -1948,7 +1948,7 @@ body.light-mode .process-step {
 .process-number{
     position: absolute;
   top: 10px;
-  left: 100px;
+  right: 100px;
   width: 32px;
   height: 32px;
   border-radius: 50%;
