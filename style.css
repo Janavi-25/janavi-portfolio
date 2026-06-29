@@ -1860,7 +1860,61 @@ body.light-mode .modal-close:hover {
 .modal-body {
   padding: 32px;
 }
+/* ===========================
+   Live Prototype Button
+=========================== */
 
+.modal-actions{
+    margin:24px 0;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.modal-live-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    padding:14px 24px;
+
+    background:linear-gradient(135deg,#0ea5e9,#2563eb);
+    color:#ffffff;
+
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+
+    border-radius:12px;
+
+    transition:.35s ease;
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+}
+
+.modal-live-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 28px rgba(37,99,235,.35);
+}
+
+.modal-live-btn:active{
+    transform:scale(.98);
+}
+
+/* ===========================
+   Light Theme
+=========================== */
+
+body.light-mode .modal-live-btn{
+    background:linear-gradient(135deg,#0284c7,#2563eb);
+    color:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+body.light-mode .modal-live-btn:hover{
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
 @media (min-width: 768px) {
   .modal-body {
     padding: 48px;
