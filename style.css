@@ -858,25 +858,24 @@ body.light-mode .hero-scroll {
 }
 
 @media (max-width: 768px) {
-
   .process-number {
-    width: 60px;
-    height: 60px;
-    font-size: 22px;
-    top: 15px;
-    right: 15px;
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 16px !important;
+    top: 12px;
+    right: 12px;
   }
 
   .process-card {
-    padding: 25px 85px 25px 25px;
+    padding: 25px 60px 25px 20px;
   }
 
   .process-card h3 {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .process-card p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.6;
   }
 }
