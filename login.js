@@ -30,7 +30,7 @@ document.getElementById("forgotPassword").addEventListener("click", async (e) =>
     const email = document.getElementById("email").value.trim();
 
     if (!email) {
-        alert("Please enter your email first.");
+        alert("janaviparmar253@gmail.com");
         return;
     }
 
