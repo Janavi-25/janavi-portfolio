@@ -1,22 +1,35 @@
-<html>
-<head>
-  <title>Admin Login</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 <div class="login-container">
-    <form id="loginForm">
+    <form id="loginForm" class="login-card">
+
         <h2>Admin Login</h2>
 
-        <input type="email" id="email" placeholder="Email" required>
+        <p class="login-subtitle">
+            Sign in to manage your portfolio
+        </p>
 
-        <input type="password" id="password" placeholder="Password" required>
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            required>
 
-        <button type="submit">Login</button>
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required>
+
+        <button type="submit">
+            Login
+        </button>
+
+        <button
+            type="button"
+            id="forgotPassword"
+            class="forgot-btn">
+
+            Forgot Password?
+        </button>
+
     </form>
 </div>
-
-  <script type="module" src="login.js"></script>
-
-</body>
-</html>
