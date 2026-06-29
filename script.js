@@ -425,6 +425,17 @@ function openCaseStudyModal(projectId) {
       <h2 class="modal-title">${project.title || ''}</h2>
       <p class="modal-description">${project.description || ''}</p>
 
+      ${project.liveLink ? `
+  <div class="modal-actions">
+    <a href="${project.liveLink}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="modal-live-btn">
+       🔗 View Live Prototype
+    </a>
+  </div>
+` : ''}
+
       ${caseStudy.problem ? `
         <div class="modal-section">
           <h3 class="modal-section-title">Problem Statement</h3>
