@@ -839,7 +839,7 @@ function renderContactInfo(contactInfo, personalInfo) {
   if (!container) return;
 
   const socialLinks = {
-    linkedin: "https://www.linkedin.com/in/janavi-parmar-45a5b02b0",
+    linkedin: "https://linkedin.com/in/janavi-parmar-45a5b02b0",
     instagram: "",
     github: "https://github.com/Janavi-25"
   };
