@@ -857,6 +857,30 @@ body.light-mode .hero-scroll {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+
+  .process-number {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .process-card {
+    padding: 25px 85px 25px 25px;
+  }
+
+  .process-card h3 {
+    font-size: 28px;
+  }
+
+  .process-card p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
 /* ========================================
    SECTION BASE
    ======================================== */
