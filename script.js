@@ -961,18 +961,22 @@ const processGrid = document.getElementById("process-grid");
 
 if (processGrid) {
   processGrid.innerHTML = designProcess.map(step => `
-    <div class="process-card">
-      <div class="process-number">${step.number}</div>
+  <div class="process-card">
 
-      <h3 class="process-title">
-        ${step.title}
-      </h3>
+    <div class="process-header">
+        <h3 class="process-title">${step.title}</h3>
 
-      <p class="process-description">
-        ${step.description}
-      </p>
+        <div class="process-number">
+            ${step.number}
+        </div>
     </div>
-  `).join("");
+
+    <p class="process-description">
+        ${step.description}
+    </p>
+
+  </div>
+`).join("");
 }
 // Initialize navigation and categories
 renderNavigation();
