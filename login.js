@@ -1,4 +1,6 @@
-console.log("login.js loaded");
+import { auth } from "./firestoreService.js";
+
+console.log("Auth Object:", auth);
 import {
     signInWithEmailAndPassword,
     sendPasswordResetEmail
