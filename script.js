@@ -839,9 +839,9 @@ function renderContactInfo(contactInfo, personalInfo) {
   if (!container) return;
 
   const socialLinks = {
-    linkedin: "https://linkedin.com/in/janaviparmar",
-    instagram: "https://instagram.com/janaviparmar",
-    github: "https://github.com/janaviparmar"
+    linkedin: "www.linkedin.com/in/janavi-parmar-45a5b02b0",
+    instagram: "",
+    github: "https://github.com/Janavi-25"
   };
 
   container.innerHTML = `
