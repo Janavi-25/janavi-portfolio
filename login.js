@@ -1,3 +1,4 @@
+console.log("login.js loaded");
 import {
     signInWithEmailAndPassword,
     sendPasswordResetEmail
