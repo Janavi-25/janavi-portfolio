@@ -1915,6 +1915,23 @@ body.light-mode .modal-live-btn{
 body.light-mode .modal-live-btn:hover{
     box-shadow:0 10px 25px rgba(0,0,0,.18);
 }
+
+@media (max-width:768px){
+
+    .modal-actions{
+        margin:18px 0;
+    }
+
+    .modal-live-btn{
+        width:100%;
+        justify-content:center;
+        padding:14px 18px;
+        font-size:15px;
+        border-radius:10px;
+    }
+
+}
+
 @media (min-width: 768px) {
   .modal-body {
     padding: 48px;
