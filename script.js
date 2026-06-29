@@ -992,3 +992,5 @@ if (processGrid) {
 renderNavigation();
 renderProjectCategories();
 
+initSmoothScroll();
+
