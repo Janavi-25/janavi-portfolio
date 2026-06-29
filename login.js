@@ -27,12 +27,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
 document.getElementById("forgotPassword").addEventListener("click", async (e) => {
     e.preventDefault();
 
-    const email = document.getElementById("email").value.trim();
-
-    if (!email) {
-        alert("janaviparmar253@gmail.com");
-        return;
-    }
+    const email = "janaviparmar253@gmail.com";
 
     try {
         await sendPasswordResetEmail(auth, email);
@@ -40,6 +35,7 @@ document.getElementById("forgotPassword").addEventListener("click", async (e) =>
         alert("Password reset link has been sent to your email.");
 
     } catch (error) {
+        console.error(error);
         alert(error.message);
     }
 });
