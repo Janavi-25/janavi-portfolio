@@ -924,15 +924,7 @@ function renderFooter(personalInfo) {
   }
 }
 
-const heroScroll = document.querySelector(".hero-scroll");
 
-if (heroScroll) {
-  heroScroll.addEventListener("click", () => {
-    document.getElementById("about").scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-}
 
 const designProcess = [
   {
@@ -992,5 +984,5 @@ if (processGrid) {
 renderNavigation();
 renderProjectCategories();
 
-initSmoothScroll();
+
 
