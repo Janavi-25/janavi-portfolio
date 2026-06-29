@@ -862,7 +862,7 @@ body.light-mode .hero-scroll {
     width: 35px !important;
     height: 35px !important;
     font-size: 16px !important;
-    top: 15px;
+    top: 18px;
     right: 12px;
   }
 
@@ -1977,7 +1977,7 @@ body.light-mode .process-step {
 
 .process-number{
 position: absolute;                
-top: 15px;
+top: 18px;
 right: 15px;
 width: 32px;
 height: 32px;
